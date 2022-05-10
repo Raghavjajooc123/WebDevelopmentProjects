@@ -1,0 +1,32 @@
+<% if(typeof error != 'undefined'){ %>
+    <% error.forEach(function(error){ %>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <%= error.msg %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    <% }); %>
+<% } %>
+
+<% if(typeof sucess != 'undefined'){ %>
+    <% sucess.forEach(function(sucess){ %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <%= sucess.msg %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    <% }); %>
+<% } %>
+
+<% if(typeof warn != 'undefined'){ %>
+    <% warn.forEach(function(warn){ %>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <%= warn.msg %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    <% }); %>
+<% } %>
