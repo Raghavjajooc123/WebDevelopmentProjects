@@ -1,0 +1,19 @@
+extend base.pug
+block style
+    style
+      include ../static/stylecontact.css
+
+
+block content
+    div(class='contact')
+        div(class='contactheading')
+            h2  Contact Us
+        form(action="/contact", method="post")
+            div(class='form')
+                input(type='text' name='name' id='name' placeholder='Enter your Name')
+                input(type='text' name='phone' id='phone' placeholder='Enter your Phone Number')
+                input(type='text' name='email' id='email' placeholder='Enter your Email Id')
+                input(type='text' name='address' id='address' placeholder='Enter your Address')
+                input(type='text' name='concern' id='concern' placeholder='Enter your Concern')
+                button(class='btn')
+                    |   Submit

@@ -1,0 +1,37 @@
+extends base.pug
+
+block style
+    style
+        include ../static/style.css
+
+block content  
+    div(class='intro')
+        |   #{data}
+        div(class='first')
+            h1 Welcome to Jajoo Dance Academy
+        div(class='second')
+            h2 Eat Dance Sleep Repeat
+    div(class='missions')
+        div(class="headingmission")
+            h2 Our Missions
+        div(class="missionitems")
+            div(class="mission")
+                h5  Encouraging Dance
+                img(src="/static/58.png")
+                p.details We want to cultivate and encourage the habit of dancing among the youth of the country so as to increase the self confidence of an individual, and boost the inner self of an individual and makes him morer presentable and Forthcoming .
+            div(class="mission")
+                h5  Cultivating Health
+                img(src="/static/55.jpg")
+                p.details Dance is the best practice to become healthy while enjoying the path to do so. Dancing is a very good practice to retain an individuals body shape, structure and the flexiblity of the body .It Cures Obesity and many other lathal Diseases
+            div(class="mission")
+                h5  Develop Hobby
+                img(src="/static/57.png")
+                p.details We want to cultivate and encourage the habit of being dancing among the youth of the country so as to increase the self confidence of an individual, and boost the inner self of an individual and makes him morer presentable and Forthcoming .
+    div(class='sponsors')
+        div(class='headingsponsor')
+            h2  Our Sponsors
+        div(class='sponsor')
+            img(src="/static/sp1.jpg")        
+            img(src="/static/sp2.png")        
+            img(src="/static/sp3.png")        
+            img(src="/static/sp4.png")
