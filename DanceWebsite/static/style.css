@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 21px;
+}
+body::before{
+    content: "";
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 359px;
+    background: url(/static/bg.jpg) center center no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-right: 36px;
+}
+.logo img {
+    width: 50px;
+    margin: auto;
+    height: 60px;
+    padding: 0px 10px;
+    filter: invert(100%);
+}
+h4{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    height: 25px;
+    width: 40px;
+    color: lightgoldenrodyellow;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: red;
+    font-family: 'Dosis', sans-serif;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 0em;
+    padding-inline-start: 0px;
+    margin-block-end: 0em;
+    
+}
+.nav ul li{
+    list-style: none;
+    padding: 23px 23px;
+}
+.nav ul a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+.nav ul a:hover{
+    color: black;
+    text-shadow: 0.5px 0.5px 0.5px rgb(255, 255, 255);
+}
+.intro{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: lightgoldenrodyellow;
+}
+.first{
+    margin: auto;
+}
+.second{
+    margin: auto;
+}
+h1{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+h2{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.intro{
+    padding: 97px 83px;
+}
+.headingmission{
+    display: inline-block;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.missions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Dosis', sans-serif;
+    
+}
+.missionitems{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.mission{
+    border: 2px solid black;
+    margin: 20px 28px;
+    height: 205px;
+    width: 328px;
+    border-radius: 18px;
+}
+.mission h5{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+    font-size: 23px;
+}
+.details{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 16px;
+    padding: 3px 7px;
+    text-align: justify;
+}
+.mission img{
+    width: 107px;
+    height: 121px;
+    float: left;
+    padding: 1px 9px;
+}
+.sponsors{
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Dosis', sans-serif;
+}
+.headingsponsor{
+    font-weight: bold;
+    display: inline-block;
+    margin: auto;
+}
+.sponsor{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 200px;
+}
+.sponsor img{
+    width: 213px;
+    height: 108px;
+    padding: 15px 27px;
+    margin: auto 0px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    height: 30px;
+}
+footer p{
+    height: 16px;
+}
