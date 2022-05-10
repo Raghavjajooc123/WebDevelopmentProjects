@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(211, 211, 211);
+}
+.chatbox{
+    background-color: white;
+    box-shadow: 4px 3px 12px 3px black;
+    width: 75vw;
+    height: 75vh;
+    margin: 12vh auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+}
+h1{
+    display: inline;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+}
+input{
+    width: 98%;
+    padding: 8px;
+    font-size: 17px;
+    background-color: #00c92b;
+    border: 2px solid #ff0000;
+    color: black;
+}
+.msgwindow{
+    height: 75vh;
+    width: 75vw;
+    background-color: #eff308;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.incoming h4{
+    text-align: left;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.outgoing h4{
+    text-align: right;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.incoming,.outgoing{
+    padding: 5px 5px;
+    width: 80%;
+}
+.outgoing{
+    margin-left: auto;
+}
+.outgoing p{
+    background-color: #a282f7;
+    border-radius: 8px;
+}
+.incoming p{
+    background-color: #59f2fd;
+    border-radius: 8px;
+}
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: justify;
+    padding: 10px 10px;
+    font-size: 18px;
+}
