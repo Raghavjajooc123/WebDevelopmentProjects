@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.all{
+    background-color: blanchedalmond;
+    width: 70vw;
+    height: 70vh;
+    margin: 12vh auto;
+}
+h1{
+    color: #5858cc;
+}
+li{
+    list-style: none;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    background-color: #0e0d13;
+    padding: 10px 10px;
+    height: 93px;
+}
+img{
+    width: 100px;
+    height: 80px;
+    filter: invert(100%);
+    padding: 0px 15px;
+}
+.head h1{
+    color: white;
+    display: inline;
+    font-size: 60px;
+}
+.side{
+    padding: 1px 1px;
+    width: 24%;
+    height: 75%;
+    float: left;
+    background-color: gray;
+}
+.side input{
+    margin: 2px 2px;
+    padding: 4px 4px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.side button{
+    margin: 2px 2px;
+    padding: 4px 4px;
+    background-color: #5858cc;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+.sidelist ul li{
+    color: black;
+    padding: 5px 15px;
+}
+.sidelist ul li:hover{
+    color: #5858cc;
+    cursor: pointer;
+}
+.sidelist ul{
+    max-height: 314px;
+    overflow-y: scroll;
+}
+.result{
+    width: 75%;
+    float: right;
+}
+.word{
+    padding: 10px 10px;
+}
+#resname{
+    padding: 5px 5px;
+}
+#resdescription{
+    padding: 5px 5px;
+}
