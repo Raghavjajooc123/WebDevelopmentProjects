@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="form">
+        <img src="../static/logo3.jpg" id="img1">
+        <form action="/" method="post" id="searchform">
+            <input type="search" name="search" placeholder="Add new Items..." id="search" value="New work is added">
+            <input type="submit" value="Add Items" id="add">
+        </form>
+        <ul id="listtodo">
+            <% for(var i=0 ; i < todolists.length ; i++){ %>
+                <li><%= todolists[i] %></li>
+           <% } %>
+        </ul>
+    </body>
+</html>
