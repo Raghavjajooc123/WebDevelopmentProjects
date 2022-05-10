@@ -1,0 +1,31 @@
+.nav{
+flex-direction: column;
+width: 100vw;
+font-size: 14px;
+}
+.top {
+    padding: 44vw 10vh;
+    font-size: 14px;
+}
+header{
+    background-size: 453vw 267vh;
+}
+.top h1{
+    font-size: 23px;
+}
+.logo{
+    display: flex;
+    margin: auto;
+}
+.list ul{
+    justify-content: space-evenly;
+}
+.services{
+     flex-direction: column;
+}
+.container{
+    flex-wrap: wrap;
+}
+.clients{
+    background-size: 264% 300%;
+}
