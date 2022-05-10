@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.outerbox{
+    height: 40vh;
+    width: 60vw;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 20px;
+    box-shadow: black 1px 2px 10px;
+}
+.draghere{
+    border: 2px dashed black;
+    padding: 2vh;
+    height: 36vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+.dragimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 2vh; */
+    height: 15vh;
+    position: relative;
+}
+.dragimage i{
+    position: absolute;
+}
+.fa-file-o{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}
+.hoveroverdraghere{
+    border: 2px dashed rgb(0, 0, 0);
+    background-color: rgb(243, 255, 131);
+}
+.dragtext{
+    font-weight: bold;
+    font-family: 'Nerko One', cursive;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#inputbutton{
+    display: none;
+}
+#browsebutton{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
