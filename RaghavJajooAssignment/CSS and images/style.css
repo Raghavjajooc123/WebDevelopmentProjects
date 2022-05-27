@@ -1,0 +1,85 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+#topbar{
+    background-color: rgb(3 12 42);
+}
+#logo {
+    width: 25vw;
+    padding: 25px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#peopleimg {
+    width: 100vw;
+}
+.yellowline{
+    height: 3vh;
+    background-color: #ffb100;
+}
+.content {
+    background-color: rgb(3 12 42);
+    padding: 5vw 5vh;
+    color: white;
+}
+.innercontent{
+    padding: 4vh 1vw;
+}
+.yellowtext {
+    color: #ffb000;
+}
+.uppertext {
+    font-size: 3.6em;
+}
+.lowertext{
+    font-size: 2.6em;
+}
+.second{
+    background-color: rgb(3 12 42);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.certificate{
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#certificate{
+    width: 32vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right{
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.imagetwo{
+    height: 30%;
+    width: 100%;
+}
+#secondimage{
+    width: 13vw;
+    float: right;
+}
+#secondtext{
+    width: 100%;
+    height: 50%;
+    font-size: 2.8em;
+    text-align: center;
+
+}
