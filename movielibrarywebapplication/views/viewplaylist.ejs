@@ -1,0 +1,73 @@
+<%- include ("./partials/headingbar"); %>
+<%- include ("./partials/navbar"); %>
+
+
+<div class="container">
+    <h4 style="margin: 20px 20px;">
+        <%= playlistname %>:
+    </h4>
+    <div class="row row-cols-1 row-cols-md-2 g-4" id="movielist">
+        <!-- <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../static/image_not_found.png" style=" max-width: 300px;margin: 0 auto;border: 4px solid #fff" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
+
+
+</div>
+</div>
+
+<!--  -->
+
+
+<script>
+    window.onload = function () {
+        const movieitem = document.getElementById('movielist');
+        var movieidstring = '<%- JSON.stringify(movies) %>';
+        console.log(movieidstring);
+        const parsed = JSON.parse(movieidstring)
+        console.log(parsed);
+
+        parsed.forEach(async function (movieid) {
+            // console.log(movieid);
+            const result = await fetch(
+                `http://www.omdbapi.com/?i=${movieid}&apikey=843cea5d`);
+            const movieDetails = await result.json();
+            // console.log(movieDetails);
+            let movieListItem = document.createElement('div');
+            movieListItem.classList.add('col');
+            movieListItem.innerHTML = `
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="${(movieDetails.Poster != "N/A") ? movieDetails.Poster : "../static/image_not_found.png"}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">${movieDetails.Title}</h5>
+                            <p class="card-text"><small class="text-muted">${movieDetails.Year}</small></p>
+                            <p class="card-text">${movieDetails.Plot}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            `;
+            movieitem.appendChild(movieListItem);
+        });
+    }
+</script> 

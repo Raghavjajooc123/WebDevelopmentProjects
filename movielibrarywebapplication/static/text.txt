@@ -1,0 +1,43 @@
+<%- include ("./partials/headingbar"); %>
+<%- include ("./partials/navbar"); %>
+
+
+<div class="container">
+    <h4 style="margin: 20px 20px;">
+        <%= playlistname %>:
+    </h4>
+    <ul class=" list-group" id="movielist">
+        
+        <!-- <li class="list-group-item list-group-item-secondary"></li> -->
+    </ul>
+
+
+
+</div>
+</div>
+
+<!--  -->
+
+
+<script>
+    window.onload = function () {
+        const ullist = document.getElementById('movielist');
+        var movieidstring = '<%- JSON.stringify(movies) %>';
+        console.log(movieidstring);
+        const parsed = JSON.parse(movieidstring)
+        console.log(parsed);
+
+        parsed.forEach(async function (movieid) {
+            // console.log(movieid);
+            const result = await fetch(
+                `http://www.omdbapi.com/?i=${movieid}&apikey=843cea5d`);
+            const movieDetails = await result.json();
+            // console.log(movieDetails);
+            let movieListItem = document.createElement('li');
+            movieListItem.classList.add('list-group-item');
+            movieListItem.classList.add('list-group-item-danger');
+            movieListItem.innerHTML = `${movieDetails.Title}`;
+            ullist.appendChild(movieListItem);
+        });
+    }
+</script> 
